@@ -10,7 +10,7 @@ export default async () => {
       .filter((value: string) => value.includes("jaeger-span-"));
     return indices;
   } catch (err) {
-    console.error("unable to connect with elasticsearch on", HOST);
+    console.error(err);
     process.exit();
   }
 };

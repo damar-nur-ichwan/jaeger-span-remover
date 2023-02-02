@@ -5,5 +5,5 @@ You can get the Docker image of this module on [DockerHub](https://hub.docker.co
 
 ```
 ELASTICSEARCH HOST: <your elasticsearch host>
-SERVICE_NAME_TARGET: <fill in the name of the service that is the target of deletion>
+SPAN_TARGET: <fill in the span that is the target of deletion with JSON format>
 ```

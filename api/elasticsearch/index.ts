@@ -1,11 +1,12 @@
-import deleteAllTracesDotBnimfApi from "./delete-all-traces-dot-bnimf.api";
+import deleteSpanApi from "./delete-span.api";
 import getAllJaegerSpanIndicesApi from "./get-all-jaeger-span-indices-api";
-import getAllTracesDotBnimfApi from "./get-all-traces-dot-bnimf.api";
+import getSpanApi from "./get-span.api";
+
 import optimizeOnlyExplugDeletesApi from "./optimize-only-explug-deletes.api";
 
 export {
   getAllJaegerSpanIndicesApi,
-  getAllTracesDotBnimfApi,
-  deleteAllTracesDotBnimfApi,
+  deleteSpanApi,
   optimizeOnlyExplugDeletesApi,
+  getSpanApi,
 };
