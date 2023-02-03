@@ -18,7 +18,7 @@ import { SPAN_TARGET } from "./constants/index-target.constant";
       const found = await getSpanApi(index);
       if (!found) continue;
       if (!found.total) continue;
-      console.info(`deleting SPAN_TARGET: ${SPAN_TARGET}  on index: ${index}`);
+      console.info(`deleting SPAN_TARGET: ${SPAN_TARGET} on index: ${index}`);
       await deleteSpanApi(index);
       await optimizeOnlyExplugDeletesApi(index);
       i--;
@@ -26,5 +26,5 @@ import { SPAN_TARGET } from "./constants/index-target.constant";
   } catch (err) {
     console.error(err);
   }
-  process.exit(1);
+  process.exit(0);
 })();
